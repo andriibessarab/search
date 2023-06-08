@@ -2,35 +2,41 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Text Search</a></li>
-                    <li><a href="image_search.html">Image Search</a></li>
-                    <li><a href="advanced_search.html">Advanced Search</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>
-                <span>G</span>
-                <span>r</span>
-                <span>o</span>
-                <span>o</span>
-                <span>g</span>
-                <span>l</span>
-                <span>e</span>
-            </h1>
-            <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky">
-            </form>
-        </main>
-    <footer>
-        &#169;Andrii Bessarab 2023
-    </footer>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Text Search</a></li>
+                        <li><a href="image_search.html">Image Search</a></li>
+                        <li><a href="advanced_search.html">Advanced Search</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>
+                    <span>G</span>
+                    <span>r</span>
+                    <span>o</span>
+                    <span>o</span>
+                    <span>g</span>
+                    <span>l</span>
+                    <span>e</span>
+                </h1>
+                <div id="form">
+                    <form action="https://google.com/search">
+                        <input type="text" name="q">
+                        <input type="submit" value="Google Search">
+                        <input type="submit" value="I'm Feeling Lucky">
+                    </form>
+                </div>
+            </main>
+            <footer>
+                &#169;Andrii Bessarab 2023
+            </footer>
+        </div>
     </body>
 </html>
