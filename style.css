@@ -10,20 +10,16 @@ html, body, * {
   margin: 0; }
 
 p, a {
-  color: #5f5f5f;
+  color: #404040;
   font-size: 0.83em; }
 
 a:hover {
   text-decoration: underline; }
 
-input[type="text"] {
-  border: 2px solid #c7c7c7;
-  border-radius: 7px; }
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 20fr 1.5fr;
+  grid-template-rows: 2fr 20fr 1fr;
   width: 100vw;
   height: 100vh; }
 
@@ -48,7 +44,7 @@ header {
           header nav ul li a.button {
             background-color: #4285F4;
             color: white;
-            padding: 0.4rem 1rem;
+            padding: 0.55rem 1.6rem;
             border-radius: 3px; }
 
 main {
@@ -62,9 +58,14 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  main h1 {
+  main > * {
+    transform: translateY(-80%); }
+  main h1 a {
+    text-decoration: none;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    font-size: 5rem; }
+    font-size: 5.4rem; }
+    main h1 a:hover {
+      text-decoration: none; }
   main form {
     display: grid;
     width: 100%;
@@ -72,22 +73,28 @@ main {
     grid-template-columns: 15fr 1.5fr 1fr 1fr 1.5fr 15fr;
     grid-template-rows: repeat(2, 1fr); }
     main form input[type=text], main form input[type=password], main form input[type=email] {
-      background: #f1f1f1;
+      background: white;
       color: #747474;
-      border: none;
-      padding: 0.4rem;
+      border: 1px solid #747474;
+      padding: 10px;
       font: inherit;
       cursor: pointer;
-      outline: inherit; }
-    main form button, main form input[type="submit"], main form input[type="reset"] {
-      background: #f1f1f1;
+      outline: inherit;
+      border-radius: 30px; }
+      main form input[type=text]:hover, main form input[type=text]:focus, main form input[type=password]:hover, main form input[type=password]:focus, main form input[type=email]:hover, main form input[type=email]:focus {
+        box-shadow: -3px 3px 4px rgba(206, 206, 206, 0.5); }
+    main form button, main form input[type=submit], main form input[type=reset] {
+      background: #F5F5F5;
       color: #747474;
       border: none;
-      padding: 0.5rem;
+      padding: 10px;
       font: inherit;
       cursor: pointer;
       outline: inherit;
       border-radius: 5px; }
+      main form button:hover, main form input[type=submit]:hover, main form input[type=reset]:hover {
+        padding: 9px;
+        border: 1px solid #747474; }
     main form #searchQuery {
       grid-column-start: 2;
       grid-column-end: 6;
@@ -105,8 +112,8 @@ footer {
   grid-column: 1;
   grid-row: 3;
   padding: 0 0.7vw;
-  background-color: #f1f1f1;
-  border-top: 0.7px solid #e3e3e3;
+  background-color: #F1F1F1;
+  border-top: 0.6px solid rgba(206, 206, 206, 0.5);
   display: flex;
   align-items: center;
   justify-content: center; }
