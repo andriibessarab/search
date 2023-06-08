@@ -46,6 +46,9 @@ header {
             color: white;
             padding: 0.55rem 1.6rem;
             border-radius: 3px; }
+            header nav ul li a.button:hover {
+              text-decoration: none;
+              background-color: #3973d4; }
 
 main {
   grid-column: 1;
@@ -131,5 +134,12 @@ footer {
 
 .google-green {
   color: #0F9D58; }
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    font-size: 14px; }
+
+  main form {
+    grid-template-columns: 3fr 1.5fr 1fr 1fr 1.5fr 3fr; } }
 
 /*# sourceMappingURL=style.css.map */

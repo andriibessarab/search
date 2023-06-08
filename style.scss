@@ -5,6 +5,7 @@ $footer-color: #F1F1F1;
 $border-color: rgba(206, 206, 206, 0.5);
 $button-color: #F5F5F5;
 $google-blue: #4285F4;
+$google-blue-hover: #3973d4;
 $google-red: #DB4437;
 $google-yellow: #F4B400;
 $google-green: #0F9D58;
@@ -70,6 +71,11 @@ header {
             color: white;
             padding: 0.55rem 1.6rem;
             border-radius: 3px;
+
+            &:hover {
+              text-decoration: none;
+              background-color: $google-blue-hover;
+            }
           }
         }
       }
@@ -192,4 +198,14 @@ footer {
 
 .google-green{
   color: $google-green;
+}
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  main form {
+    grid-template-columns: 3fr 1.5fr 1fr 1fr 1.5fr 3fr;
+  }
 }
