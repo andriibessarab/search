@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Text Search</a></li>
-                        <li><a href="image_search.html">Image Search</a></li>
-                        <li><a href="advanced_search.html">Advanced Search</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <h1>
-                    <span>G</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>o</span>
-                    <span>g</span>
-                    <span>l</span>
-                    <span>e</span>
-                </h1>
-                <div id="form">
-                    <form action="https://google.com/search">
-                        <input type="text" name="q">
-                        <input type="submit" value="Google Search">
-                        <input type="submit" value="I'm Feeling Lucky">
-                    </form>
-                </div>
-            </main>
-            <footer>
-                <p>&#169;Andrii Bessarab 2023</p>
-            </footer>
-        </div>
-    </body>
+<head>
+    <title>Search</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Text Search</a></li>
+                <li><a href="image_search.html">Image Search</a></li>
+                <li><a href="advanced_search.html">Advanced Search</a></li>
+                <li><a class="button" href="https://accounts.google.com/signin" target="_blank">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></h1>
+        <form action="https://google.com/search">
+                <input name="q" type="text" id="searchQuery">
+                <input type="submit" value="Google Search" id="searchButton">
+                <input type="submit" value="I'm Feeling Lucky" id="feelingLuckyButton">
+        </form>
+    </main>
+    <footer>
+        <p>&#169; Andrii Bessarab 2023</p>
+    </footer>
+</div>
+</body>
 </html>
