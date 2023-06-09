@@ -74,8 +74,9 @@ form {
   display: grid;
   width: 100%;
   gap: 20px;
-  grid-template-columns: 15fr 1.5fr 1fr 1fr 1.5fr 15fr;
-  grid-template-rows: repeat(2, 1fr); }
+  grid-template-columns: 15fr 1.5fr 2.5fr 2.5fr 1.5fr 15fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center; }
   form input[type=text], form input[type=password], form input[type=email] {
     background: white;
     color: #747474;
@@ -95,7 +96,8 @@ form {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    border-radius: 5px; }
+    border-radius: 5px;
+    max-width: 150px; }
     form button:hover, form input[type=submit]:hover, form input[type=reset]:hover {
       padding: 9px;
       border: 1px solid #747474; }
@@ -103,7 +105,8 @@ form {
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row: 1;
-    position: relative; }
+    position: relative;
+    width: 100%; }
     form .search-container .search-input {
       width: 100%;
       padding-left: 40px; }
