@@ -1,17 +1,24 @@
+// Gray Colors
 $text-color: #404040;
 $footer-text-color: #747474;
 $input-color: #c7c7c7;
 $footer-color: #F1F1F1;
 $border-color: rgba(206, 206, 206, 0.5);
 $button-color: #F5F5F5;
+$icon-color: #9AA0A6;
+
+// Google Colors
 $google-blue: #4285F4;
 $google-blue-hover: #3973d4;
 $google-red: #DB4437;
 $google-yellow: #F4B400;
 $google-green: #0F9D58;
+
+// Sizes
 $text-size: 0.83em;
 $heading-size: 5.4rem;
 
+// Product Sans Font
 @font-face {
   font-family: 'Product Sans';
   font-style: normal;
@@ -19,6 +26,7 @@ $heading-size: 5.4rem;
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
+// Reset default styles
 html, body, * {
   font-family: Product Sans, serif;
   box-sizing: border-box;
@@ -35,6 +43,7 @@ a:hover {
   text-decoration: underline;
 }
 
+// Page container with display grid
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -43,6 +52,7 @@ a:hover {
   height: 100vh;
 }
 
+// Nav Bar
 header {
   grid-column: 1;
   grid-row: 1;
@@ -83,6 +93,7 @@ header {
   }
 }
 
+// Heading & Search
 main {
   grid-column: 1;
   grid-row: 2;
@@ -96,7 +107,7 @@ main {
   flex-direction: column;
 
   & > * {
-  transform: translateY(-80%);
+    transform: translateY(-80%);
   }
 
   h1 {
@@ -111,64 +122,92 @@ main {
     }
   }
 
-  form {
-    display: grid;
-    width: 100%;
-    gap: 20px;
-    grid-template-columns: 15fr 1.5fr 1fr 1fr 1.5fr 15fr;
-    grid-template-rows: repeat(2, 1fr);
 
-    input[type=text], input[type=password], input[type=email] {
-      background: white;
-      color: $footer-text-color;
+}
+
+// Search Form
+form {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 15fr 1.5fr 1fr 1fr 1.5fr 15fr;
+  grid-template-rows: repeat(2, 1fr);
+
+  input[type=text], input[type=password], input[type=email] {
+    background: white;
+    color: $footer-text-color;
+    border: 1px solid $footer-text-color;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 30px;
+
+    &:hover, &:focus {
+      box-shadow: -3px 3px 4px $border-color;
+    }
+  }
+
+  button, input[type=submit], input[type=reset] {
+    background: $button-color;
+    color: $footer-text-color;
+    border: none;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 5px;
+
+    &:hover {
+      padding: 9px;
       border: 1px solid $footer-text-color;
-      padding: 10px;
-      font: inherit;
-      cursor: pointer;
-      outline: inherit;
-      border-radius: 30px;
+    }
+  }
 
-      &:hover, &:focus {
-        box-shadow: -3px 3px 4px $border-color;
-      }
+  .search-container {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row: 1;
+    position: relative;
+
+    .search-input {
+      width: 100%;
+      padding-left: 40px;
     }
 
-    button, input[type=submit], input[type=reset] {
-      background: $button-color;
-      color: $footer-text-color;
-      border: none;
-      padding: 10px;
-      font: inherit;
-      cursor: pointer;
-      outline: inherit;
-      border-radius: 5px;
-
-      &:hover {
-        padding: 9px;
-        border: 1px solid $footer-text-color;
-      }
+    .search-icon {
+      background: none;
+      color: $icon-color;
+      height: 24px;
+      width: 24px;
+      margin: auto;
+      position: absolute;
+      left: 10px; /* Adjust the value to position the icon */
+      top: 50%;
+      transform: translateY(-50%);
     }
+  }
 
-    #searchQuery {
-      grid-column-start: 2;
-      grid-column-end: 6;
-      grid-row: 1;
-    }
+  #search-button {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 2;
+  }
 
-    #searchButton {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row: 2;
-    }
+  #feeling-lucky-button {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 2;
+  }
 
-    #feelingLuckyButton {
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row: 2;
-    }
+  #image-search-button {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 2;
   }
 }
 
+// Footer
 footer {
   grid-column: 1;
   grid-row: 3;
@@ -184,22 +223,27 @@ footer {
   }
 }
 
-.google-blue{
+// Google Colors - Blue
+.google-blue {
   color: $google-blue;
 }
 
-.google-red{
+// Google Colors - Red
+.google-red {
   color: $google-red;
 }
 
-.google-yellow{
+// Google Colors - Yellow
+.google-yellow {
   color: $google-yellow;
 }
 
-.google-green{
+// Google Colors - Green
+.google-green {
   color: $google-green;
 }
 
+// Mobile Screen Media Query
 @media only screen and (max-width: 600px) {
   html, body {
     font-size: 14px;

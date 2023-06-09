@@ -69,47 +69,67 @@ main {
     font-size: 5.4rem; }
     main h1 a:hover {
       text-decoration: none; }
-  main form {
-    display: grid;
-    width: 100%;
-    gap: 20px;
-    grid-template-columns: 15fr 1.5fr 1fr 1fr 1.5fr 15fr;
-    grid-template-rows: repeat(2, 1fr); }
-    main form input[type=text], main form input[type=password], main form input[type=email] {
-      background: white;
-      color: #747474;
-      border: 1px solid #747474;
-      padding: 10px;
-      font: inherit;
-      cursor: pointer;
-      outline: inherit;
-      border-radius: 30px; }
-      main form input[type=text]:hover, main form input[type=text]:focus, main form input[type=password]:hover, main form input[type=password]:focus, main form input[type=email]:hover, main form input[type=email]:focus {
-        box-shadow: -3px 3px 4px rgba(206, 206, 206, 0.5); }
-    main form button, main form input[type=submit], main form input[type=reset] {
-      background: #F5F5F5;
-      color: #747474;
-      border: none;
-      padding: 10px;
-      font: inherit;
-      cursor: pointer;
-      outline: inherit;
-      border-radius: 5px; }
-      main form button:hover, main form input[type=submit]:hover, main form input[type=reset]:hover {
-        padding: 9px;
-        border: 1px solid #747474; }
-    main form #searchQuery {
-      grid-column-start: 2;
-      grid-column-end: 6;
-      grid-row: 1; }
-    main form #searchButton {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row: 2; }
-    main form #feelingLuckyButton {
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row: 2; }
+
+form {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 15fr 1.5fr 1fr 1fr 1.5fr 15fr;
+  grid-template-rows: repeat(2, 1fr); }
+  form input[type=text], form input[type=password], form input[type=email] {
+    background: white;
+    color: #747474;
+    border: 1px solid #747474;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 30px; }
+    form input[type=text]:hover, form input[type=text]:focus, form input[type=password]:hover, form input[type=password]:focus, form input[type=email]:hover, form input[type=email]:focus {
+      box-shadow: -3px 3px 4px rgba(206, 206, 206, 0.5); }
+  form button, form input[type=submit], form input[type=reset] {
+    background: #F5F5F5;
+    color: #747474;
+    border: none;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 5px; }
+    form button:hover, form input[type=submit]:hover, form input[type=reset]:hover {
+      padding: 9px;
+      border: 1px solid #747474; }
+  form .search-container {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row: 1;
+    position: relative; }
+    form .search-container .search-input {
+      width: 100%;
+      padding-left: 40px; }
+    form .search-container .search-icon {
+      background: none;
+      color: #9AA0A6;
+      height: 24px;
+      width: 24px;
+      margin: auto;
+      position: absolute;
+      left: 10px;
+      /* Adjust the value to position the icon */
+      top: 50%;
+      transform: translateY(-50%); }
+  form #search-button {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 2; }
+  form #feeling-lucky-button {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 2; }
+  form #image-search-button {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 2; }
 
 footer {
   grid-column: 1;
