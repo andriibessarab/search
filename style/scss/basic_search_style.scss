@@ -115,6 +115,9 @@ main {
   }
 
   h1 {
+    line-height: 1;
+    padding-bottom: 0.9rem;
+
     a {
       text-decoration: none;
       font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -122,6 +125,17 @@ main {
 
       &:hover {
         text-decoration: none;
+      }
+    }
+
+    .service-name-container {
+      display: flex;
+      justify-content: right;
+
+      span {
+        font-size: 1.1rem;
+        padding: 0;
+        transform: translate(-2px, -6px);
       }
     }
   }
