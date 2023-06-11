@@ -3,13 +3,16 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
-html, body, * {
+html,
+body,
+* {
   font-family: Product Sans, serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
 
-p, a {
+p,
+a {
   color: #404040;
   font-size: 0.83em; }
 
@@ -64,8 +67,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  main > * {
-    transform: translateY(-80%); }
   main h1 a {
     text-decoration: none;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -80,7 +81,9 @@ form {
   grid-template-columns: 15fr 1.5fr 2.5fr 2.5fr 1.5fr 15fr;
   grid-template-rows: repeat(2, 1fr);
   justify-items: center; }
-  form input[type=text], form input[type=password], form input[type=email] {
+  form input[type=text],
+  form input[type=password],
+  form input[type=email] {
     background: white;
     color: #747474;
     border: 1px solid #747474;
@@ -89,9 +92,15 @@ form {
     cursor: pointer;
     outline: inherit;
     border-radius: 30px; }
-    form input[type=text]:hover, form input[type=text]:focus, form input[type=password]:hover, form input[type=password]:focus, form input[type=email]:hover, form input[type=email]:focus {
+    form input[type=text]:hover, form input[type=text]:focus,
+    form input[type=password]:hover,
+    form input[type=password]:focus,
+    form input[type=email]:hover,
+    form input[type=email]:focus {
       box-shadow: -3px 3px 4px rgba(206, 206, 206, 0.5); }
-  form button, form input[type=submit], form input[type=reset] {
+  form button,
+  form input[type=submit],
+  form input[type=reset] {
     background: #F5F5F5;
     color: #747474;
     border: none;
@@ -101,7 +110,9 @@ form {
     outline: inherit;
     border-radius: 5px;
     max-width: 150px; }
-    form button:hover, form input[type=submit]:hover, form input[type=reset]:hover {
+    form button:hover,
+    form input[type=submit]:hover,
+    form input[type=reset]:hover {
       padding: 9px;
       border: 1px solid #747474; }
   form .search-container {
@@ -162,7 +173,8 @@ footer {
   color: #0F9D58; }
 
 @media only screen and (max-width: 600px) {
-  html, body {
+  html,
+  body {
     font-size: 14px; }
 
   main form {

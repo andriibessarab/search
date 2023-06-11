@@ -9,6 +9,7 @@ $icon-color: #9AA0A6;
 
 // Google Colors
 $google-blue: #4285F4;
+
 $google-blue-hover: #3973d4;
 $google-red: #DB4437;
 $google-yellow: #F4B400;
@@ -27,14 +28,17 @@ $heading-size: 5.4rem;
 }
 
 // Reset default styles
-html, body, * {
+html,
+body,
+* {
   font-family: Product Sans, serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-p, a {
+p,
+a {
   color: $text-color;
   font-size: $text-size;
 }
@@ -54,43 +58,43 @@ a:hover {
 
 // Nav Bar
 header {
-  grid-column: 1;
-  grid-row: 1;
-  padding: 1vh 0.7vw 0;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 1vh 0.7vw 0;
 
-  nav {
-    width: 100%;
-    height: 100%;
-
-    ul {
-      padding-top: 0.5em;
-      display: flex;
-      justify-content: flex-end;
-      align-items: start;
-      list-style-type: none;
-
-      li {
+    nav {
+        width: 100%;
         height: 100%;
-        padding-right: 1em;
 
-        a {
-          text-decoration: none;
+        ul {
+            padding-top: 0.5em;
+            display: flex;
+            justify-content: flex-end;
+            align-items: start;
+            list-style-type: none;
 
-          &.button {
-            background-color: $google-blue;
-            color: white;
-            padding: 0.55rem 1.6rem;
-            border-radius: 3px;
+            li {
+                height: 100%;
+                padding-right: 1em;
 
-            &:hover {
-              text-decoration: none;
-              background-color: $google-blue-hover;
+                a {
+                    text-decoration: none;
+
+                    &.button {
+                        background-color: $google-blue;
+                        color: white;
+                        padding: 0.55rem 1.6rem;
+                        border-radius: 3px;
+
+                        &:hover {
+                            text-decoration: none;
+                            background-color: $google-blue-hover;
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }
 
 // Heading & Search
@@ -121,8 +125,6 @@ main {
       }
     }
   }
-
-
 }
 
 // Search Form
@@ -134,7 +136,9 @@ form {
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
 
-  input[type=text], input[type=password], input[type=email] {
+  input[type=text],
+  input[type=password],
+  input[type=email] {
     background: white;
     color: $footer-text-color;
     border: 1px solid $footer-text-color;
@@ -144,13 +148,15 @@ form {
     outline: inherit;
     border-radius: 30px;
 
-
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       box-shadow: -3px 3px 4px $border-color;
     }
   }
 
-  button, input[type=submit], input[type=reset] {
+  button,
+  input[type=submit],
+  input[type=reset] {
     background: $button-color;
     color: $footer-text-color;
     border: none;
@@ -186,7 +192,8 @@ form {
       width: 24px;
       margin: auto;
       position: absolute;
-      left: 10px; /* Adjust the value to position the icon */
+      left: 10px;
+      /* Adjust the value to position the icon */
       top: 50%;
       transform: translateY(-50%);
     }
@@ -249,7 +256,9 @@ footer {
 
 // Mobile Screen Media Query
 @media only screen and (max-width: 600px) {
-  html, body {
+
+  html,
+  body {
     font-size: 14px;
   }
 
