@@ -3,67 +3,69 @@
 <head>
     <title>Google Advanced Search</title>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
     <link href="style/css/advanced_search_style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>
-                <a href="index.html"><span class="google-blue">G</span><span class="google-red">o</span><span
-                        class="google-yellow">o</span><span
-                        class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Google Search</a></li>
-                    <li><a href="image_search.html">Images</a></li>
-                    <li><a class="button" href="https://accounts.google.com/signin">Sign in</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2 class="google-red">Advanced Search</h2>
-            <div class="line_break"></div>
-            <form action="https://google.com/search ">
-                <div class="search-row-container">
-                    <h3>Find pages with...</h3>
-                    <h4>To do this in the search box</h4>
-                </div>
+<div class="container">
+    <header>
+        <h1>
+            <a href="index.html"><span class="google-blue">G</span><span class="google-red">o</span><span
+                    class="google-yellow">o</span><span
+                    class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Google Search</a></li>
+                <li><a href="image_search.html">Images</a></li>
+                <li><a class="button" href="https://accounts.google.com/signin">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="google-red">Advanced Search</h2>
+        <div class="line_break"></div>
+        <form action="https://google.com/search ">
+            <div class="search-row-container">
+                <h3>Find pages with...</h3>
+                <h4>To do this in the search box</h4>
+            </div>
 
-                <div class="search-row-container">
-                    <label for="all-these-words">all these words:</label>
-                    <input class="search-input" id="all-these-words" name="as_q" type="text">
-                    <p>Type the important words: <span class="monospace">tricolor rat terrier</span></p>
-                </div>
+            <div class="search-row-container">
+                <label for="all-these-words">all these words:</label>
+                <input class="search-input" id="all-these-words" name="as_q" type="text">
+                <p>Type the important words: <span class="monospace">tricolor rat terrier</span></p>
+            </div>
 
-                <div class="search-row-container">
-                    <label for="this-exact-word-or-phrase">this exact word or phrase:</label>
-                    <input class="search-input" id="this-exact-word-or-phrase" name="as_epq" type="text">
-                    <p>Put exact words in quotes: <span class="monospace">"rat terrier"</span></p>
-                </div>
+            <div class="search-row-container">
+                <label for="this-exact-word-or-phrase">this exact word or phrase:</label>
+                <input class="search-input" id="this-exact-word-or-phrase" name="as_epq" type="text">
+                <p>Put exact words in quotes: <span class="monospace">"rat terrier"</span></p>
+            </div>
 
-                <div class="search-row-container">
-                    <label for="any-of-these-words">any of these words:</label>
-                    <input class="search-input" id="any-of-these-words" name="as_oq" type="text">
-                    <p>Type <span class="monospace">OR</span> between all the words you want:
-                        <span class="monospace">miniature OR standard</span></p>
-                </div>
+            <div class="search-row-container">
+                <label for="any-of-these-words">any of these words:</label>
+                <input class="search-input" id="any-of-these-words" name="as_oq" type="text">
+                <p>Type <span class="monospace">OR</span> between all the words you want:
+                    <span class="monospace">miniature OR standard</span></p>
+            </div>
 
-                <div class="search-row-container">
-                    <label for="none-of-these-words">none of these words:</label>
-                    <input class="search-input" id="none-of-these-words" name="as_eq" type="text">
-                    <p>Put a minus sign just before words you don't want:  <span class="monospace">-rodent, -"Jack Russell"</span></p>
+            <div class="search-row-container">
+                <label for="none-of-these-words">none of these words:</label>
+                <input class="search-input" id="none-of-these-words" name="as_eq" type="text">
+                <p>Put a minus sign just before words you don't want: <span
+                        class="monospace">-rodent, -"Jack Russell"</span></p>
+            </div>
+            <div class="search-row-container">
+                <div class="button-container">
+                    <input id="image-search-button" type="submit" value="Advanced Search">
                 </div>
-                <div class="search-row-container">
-                    <div class="button-container">
-                        <input id="image-search-button" type="submit" value="Advanced Search">
-                    </div>
-                </div>
-            </form>
-        </main>
-        <footer>
-            <p>&#169; Andrii Bessarab 2023</p>
-        </footer>
-    </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Made by Andrii Bessarab 2023 | CS50w Project 0</p>
+    </footer>
+</div>
 </body>
 </html>

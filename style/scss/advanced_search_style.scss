@@ -21,10 +21,10 @@ $heading-size: 5.4rem;
 
 // Product Sans Font
 @font-face {
-    font-family: 'Product Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
 // Reset default styles
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .monospace {
-    font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
+  font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
 }
 
 // Page container with display grid
@@ -81,16 +81,16 @@ a:hover {
 header {
   grid-column: 1;
   grid-row: 1;
-    padding: 1vh 0.7vw 0;
+  padding: 1vh 0.7vw 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-    h1,
-    p,
-    a {
-        font-family: Product Sans, serif;
-    }
+  h1,
+  p,
+  a {
+    font-family: Product Sans, serif;
+  }
 
   h1 {
     margin-right: auto;
@@ -203,9 +203,9 @@ form {
     color: $text-color;
     font-size: 0.7rem;
 
-      span {
-          color: $footer-text-color;
-      }
+    span {
+      color: $footer-text-color;
+    }
   }
 
   h3 {
@@ -285,16 +285,16 @@ footer {
 
 // Large Screen Query
 @media only screen and (min-width: 1200px) {
-    form {
-        width: 65%;
-    }
+  form {
+    width: 65%;
+  }
 }
 
 // Very Large Screen Query
 @media only screen and (min-width: 2000px) {
-    form {
-        width: 45%;
-    }
+  form {
+    width: 45%;
+  }
 }
 
 // Mobile Screen Media Query
