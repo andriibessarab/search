@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
 html,
 body,
 * {
@@ -35,17 +40,21 @@ a:hover {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 20fr 1fr;
+  grid-template-rows: 1fr 20fr 1fr;
   width: 100vw;
   height: 100vh; }
 
 header {
   grid-column: 1;
   grid-row: 1;
-  padding: 0 0.7vw;
+  padding: 1vh 0.7vw 0;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  header h1,
+  header p,
+  header a {
+    font-family: Product Sans, serif; }
   header h1 {
     margin-right: auto;
     font-size: 1.7rem; }
@@ -88,7 +97,7 @@ main {
     padding: 0 0.7vw 0 2.5rem; }
   main h2 {
     font-size: 1.23rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-bottom: 0.7rem; }
 
 form {
@@ -100,7 +109,7 @@ form {
 .search-row-container {
   grid-column: 1;
   display: grid;
-  grid-template-columns: 4fr 16fr 9fr;
+  grid-template-columns: 4fr 16fr 8fr;
   grid-template-rows: 1fr;
   height: 2rem;
   align-items: center;
@@ -115,7 +124,8 @@ form {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    height: 70%; }
+    height: 70%;
+    font-size: 0.8rem; }
     .search-row-container input[type=text]:focus,
     .search-row-container input[type=password]:focus,
     .search-row-container input[type=email]:focus {

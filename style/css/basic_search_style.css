@@ -115,11 +115,11 @@ form {
       padding: 9px;
       border: 1px solid #747474; }
   form .search-container {
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
     grid-row: 1;
     position: relative;
-    width: 100%; }
+    width: 35rem; }
     form .search-container .search-input {
       width: 100%;
       padding-left: 40px; }
@@ -171,12 +171,14 @@ footer {
 .google-green {
   color: #0F9D58; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   html,
   body {
     font-size: 14px; }
 
   form {
-    grid-template-columns: 3fr 1.5fr 1fr 1fr 1.5fr 3fr; } }
+    grid-template-columns: 3fr 1.5fr 1fr 1fr 1.5fr 3fr; }
+    form .search-container {
+      width: 85%; } }
 
 /*# sourceMappingURL=basic_search_style.css.map */
