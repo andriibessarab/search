@@ -10,8 +10,8 @@
     <header>
         <h1>
             <a href="index.html"><span class="google-blue">G</span><span class="google-red">o</span><span
-                class="google-yellow">o</span><span
-                class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></a>
+                    class="google-yellow">o</span><span
+                    class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></a>
         </h1>
         <nav>
             <ul>
@@ -24,38 +24,43 @@
     <main>
         <h2 class="google-red">Advanced Search</h2>
         <div class="line_break"></div>
-        <h3>Find pages with...</h3>
-        <h3>To do this in the search box</h3>
         <form action="https://google.com/images">
-            <div class="search-container">
-                <div class="search-row-container">
-                    <label for="all-these-words">all these words:</label>
-                    <input class="search-input" name="q" id="all-these-words" type="text">
-                    <span>Type the important words:  <strong>tricolor rat terrier</strong></span>
-                </div>
-
-                <div class="search-row-container">
-                    <label for="all-these-words">this exact word or phrase:</label>
-                    <input class="search-input" name="q" id="this-exact-word-or-phrase" type="text">
-                    <span>Put exact words in quotes:  <strong>"rat terrier"</strong></span>
-                </div>
-
-                <div class="search-row-container">
-                    <label for="any-of-these-words">any of these words:</label>
-                    <input class="search-input" name="q" id="any-of-these-words" type="text">
-                    <span>Type <b>OR</b> between all the words you want:  <strong>miniature OR standard</strong></span>
-                </div>
-
-                <div class="search-row-container">
-                    <label for="none-of-these-words">none of these words:</label>
-                    <input class="search-input" name="q" id="none-of-these-words" type="text">
-                    <span>Put 2 periods between the numbers and add a unit of measure: <strong>10..35 lb, $300..$500, 2010..2011</strong></span>
-                </div>
-
-
-
+            <div class="search-row-container">
+                <h3>Find pages with...</h3>
+                <h4>To do this in the search box</h4>
             </div>
-            <input id="image-search-button" type="submit" value="Image Search">
+
+            <div class="search-row-container">
+                <label for="all-these-words">all these words:</label>
+                <input class="search-input" id="all-these-words" name="q" type="text">
+                <p>Type the important words: <span class="monospace">tricolor rat terrier</span></p>
+            </div>
+
+            <div class="search-row-container">
+                <label for="all-these-words">this exact word or phrase:</label>
+                <input class="search-input" id="this-exact-word-or-phrase" name="q" type="text">
+                <p>Put exact words in quotes: <span class="monospace">"rat terrier"</span></p>
+            </div>
+
+            <div class="search-row-container">
+                <label for="any-of-these-words">any of these words:</label>
+                <input class="search-input" id="any-of-these-words" name="q" type="text">
+                <p>Type <span class="monospace">OR</span> between all the words you want:
+                    <span class="monospace">miniature OR standard</span></p>
+            </div>
+
+            <div class="search-row-container">
+                <label for="none-of-these-words">none of these words:</label>
+                <input class="search-input" id="none-of-these-words" name="q" type="text">
+                <p>Put 2 periods between the numbers and add a unit of measure: <span class="monospace">10..35 lb,
+                    $300..$500,
+                    2010..2011</span></p>
+            </div>
+            <div class="search-row-container">
+                <div class="button-container">
+                    <input id="image-search-button" type="submit" value="Advanced Search">
+                </div>
+            </div>
         </form>
     </main>
     <footer>

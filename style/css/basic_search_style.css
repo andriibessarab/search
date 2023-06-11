@@ -176,7 +176,7 @@ footer {
   body {
     font-size: 14px; }
 
-  main form {
+  form {
     grid-template-columns: 3fr 1.5fr 1fr 1fr 1.5fr 3fr; } }
 
 /*# sourceMappingURL=basic_search_style.css.map */
